@@ -1,0 +1,11 @@
+section.banner{
+	width: 100%;
+	display: block;
+	margin: 0;
+	background: url('background.jpg') #bbb;
+	background-size: cover;
+}
+
+body.project header {
+    background: rgba(0,0,0,.5);
+}

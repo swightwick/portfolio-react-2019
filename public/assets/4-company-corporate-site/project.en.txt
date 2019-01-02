@@ -1,0 +1,40 @@
+Title: Company corporate site
+
+----
+
+Year: 
+
+----
+
+Text: 
+
+(image: etx-browser.png imgclass: browser)
+
+Whilst working at Pretty agency, I was part of the team that worked with a large trading company in the city. We rebranded their trading application and supporting web sites, including the site for their corporate company.
+
+(image: etx-layout.jpg imgclass: centered)
+
+The site was designed by pretty and had to include lots of facts and figures about the company to easily convey their details to customers and clients small and large. 
+
+(image: etx-header.jpg)
+
+We built the site using Foundation 5 and Sass. D3 was used for the interactive charts, and animate.css for the majority of pictures and app mock ups for interactivity.
+
+(image: etx-map.jpg)
+
+Custom javascript elements were made for the mega menu and office selector map area which were made to work on mobile too. 
+
+(image: etx-mobile-menu.jpg imgclass: mobile)
+(image: etx-mobile-trader.jpg imgclass: mobile)
+
+----
+
+Tags: 
+
+----
+
+Name: Informative business corporate site
+
+----
+
+Link: 

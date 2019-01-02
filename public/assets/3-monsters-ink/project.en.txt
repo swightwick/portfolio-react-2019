@@ -1,0 +1,53 @@
+Title: Monsters Ink
+
+----
+
+Year: 
+
+----
+
+Text: 
+
+(image: monsters-browser.png imgclass: browser)
+
+Monsters Ink was a project I was part of whilst working for Pretty agency. The initial concept was to provide an interactive element to the clients display stand at a large event.
+
+(image: monsters-ink-detail.jpg)
+We developed the idea of colouring in a monster template using the clients products, then seeing it come to life on screen.
+
+We decided 3 monsters would be the right amount, so there is just enough happening at once on screen, but not too much going on. A city scape for the monsters to walk around was created, and a template for the monsters was also made. 
+
+(image: monsters-ink-city.png)
+
+The 3 monsters were defined based on the main animation they perform - Angry, Flying and Scooting monsters were all animated across a city backdrop. When a new scan is processed an older scan is deleted. The screen only shows the last 3 visitors designs for each type of monster, ensuring that there is always relatively something new on the screen, and if you are a visitor awaiting to see your monster, you will not have to wait around too long.
+
+Once the concept and designs had been decided we had to make the pieces all work together. Our setup consisted of a laptop and scanner (image processing) locally connected to a Mac mini (Converting images to web elements) with a projector or large screen as a monitor.
+
+(image: monsters-ink-sheet.jpg imgclass: centered)
+
+We need to be able to perform the following:
+- Process users scan
+- Extract individual parts of scanned monster as images
+- Convert scan(JPG) to digital(SVG) using SVG masking and save
+- Rearrange monster parts into pre-made animation template, and set new scanned images as background images
+- Inject new monster into current scene seamlessly with no glitches or lag.
+
+We used Node JS to create a local web server and listen for new incoming scans, and Grunt was used to automate tasks we needed to perform such as processing scans and moving and rotating images. Node modules which were of great help  include Node inspector, Nodemon, SVG 2 PNG 
+
+(image: monsters-ink-stand.png)
+
+After thorough testing at the Pretty office using a projector, the project was installed at the  stand. Cables were hidden away tidy inside walls, and the monitor was an impressive 80” 4K Legamaster screen which really helped bring the project to life. On the day of the event the project was running well and it was great to see adults and children of all ages enjoying colouring in monsters and using products.
+
+<iframe src="https://player.vimeo.com/video/206722769" width="640" height="360" align="center" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+----
+
+Tags: nodejs,grunt
+
+----
+
+Name: Interactive exhibition piece powered by Node.js
+
+----
+
+Link: 

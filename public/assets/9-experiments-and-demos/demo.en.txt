@@ -1,0 +1,79 @@
+Title: Experiments and demos
+
+----
+
+Text: 
+
+(image:demos-experiments.jpg imgclass: browser)
+
+## Less Effort SVG spinner
+
+<p data-height="420" data-theme-id="light" data-slug-hash="pyEYvp" data-default-tab="result" data-user="swightwick" data-embed-version="2" data-pen-title="Less effort svg logo" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/swightwick/pen/pyEYvp/">Less effort svg logo</a> by sam (<a href="http://codepen.io/swightwick">@swightwick</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+I love SVG, where possible its my favourite image type to use due to its flexibility. Designing for Less Effort, I am familiar with Illustrator and use it for graphics creation. After researching  animating SVGs, I decided to apply some animation to a recent Less Effort graphic. Individual parts were grouped together as classes, then rotation 2D and 3D was applied. 
+
+
+## Email viewer
+
+<p data-height="780" data-theme-id="light" data-slug-hash="KWpErd" data-default-tab="result" data-user="swightwick" data-embed-version="2" data-pen-title="phone scroller" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/swightwick/pen/KWpErd/">phone scroller</a> by sam (<a href="http://codepen.io/swightwick">@swightwick</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+I have previously had the task of creating responsive emails. For demonstrating designs I have built the below pen which was considered for use on my portfolio. The idea was to display screenshots of the full email at both desktop and mobile, then the scroll is synced using jQuery scrollTop. When you scroll on the mobile the desktop version scrolls to, so you can see how the design responds between desktop and mobile.
+
+
+## React Firebase
+
+<p data-height="503" data-theme-id="light" data-slug-hash="pbYjpX" data-default-tab="result" data-user="swightwick" data-embed-version="2" data-pen-title="React Firebase" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/swightwick/pen/pbYjpX/">React Firebase</a> by Sam Wightwick (<a href="http://codepen.io/swightwick">@swightwick</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+This is a prototype project for displaying and updating stock using a database. I am currently learning and experimenting with React and wanted a project to make something useful whilst learning. I use React to fetch and display data from a Firebase database, which consists of products and the amount of each size we have in stock. This was the first step, fetching and displaying data. The next part I want to add is changing the amounts on the front end and then saving the data back to the database.
+
+
+##3D GRAPHICS
+
+  <section class="slider">
+    <div>
+(image: 3d-graffiti.jpg)
+    </div>
+    <div>
+(image: 3d-abstract-graffiti.jpg)
+    </div>
+    <div>
+(image: cinema-4d-graffiti.jpg)
+    </div>
+  </section>
+
+
+## PHOTOGRAPHY
+
+  <section class="slider">
+    <div>
+(image: cph.jpg)
+    </div>
+    <div>
+(image:oslo-architecture.jpg)
+    </div>
+    <div>
+(image: london-photo.jpg)
+    </div>
+    <div>
+(image: carl.jpg)
+    </div>
+  </section>
+
+----
+
+Year: 
+
+----
+
+Tags: 
+
+----
+
+Name: A space for ideas and experiments
+
+----
+
+Link: 
