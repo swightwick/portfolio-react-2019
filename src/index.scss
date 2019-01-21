@@ -6,6 +6,17 @@ $secondary: $secondary;
 $dark-color:A09FAD;
 */
 
+/*
+ _____  ___  ___  ____    _ _____ _____  _   _ _____ _    _ _____ _____  _   __
+/  ___|/ _ \ |  \/  | |  | |_   _|  __ \| | | |_   _| |  | |_   _/  __ \| | / /
+\ `--./ /_\ \| .  . | |  | | | | | |  \/| |_| | | | | |  | | | | | /  \/| |/ / 
+ `--. \  _  || |\/| | |/\| | | | | | __ |  _  | | | | |/\| | | | | |    |    \ 
+/\__/ / | | || |  | \  /\  /_| |_| |_\ \| | | | | | \  /\  /_| |_| \__/\| |\  \
+\____/\_| |_/\_|  |_/\/  \/ \___/ \____/\_| |_/ \_/  \/  \/ \___/ \____/\_| \_/
+                                                                               
+PORTFOLIO V2 REACT
+*/                                                                          
+
 $light-color: #F9F9F9;
 $dark-color:#A09FAD;
 $body: #8c898f;
@@ -89,9 +100,6 @@ img {
 }
 
 /* GENERAL  */
-/* main{
-  padding-top: 2rem;
-} */
 
 #allProjects, #features, .demoProjects, .project, .about, .aboutLinks, .skillbox, #heroHolder {
   width: 75%;
@@ -190,7 +198,7 @@ header {
 
 /* HERO */
 
-#overlay, .test {
+#overlay, .tiltbg {
   background: url(/assets/home/mount.png) no-repeat;
   mix-blend-mode: lighten;
   background-position: center top;
@@ -212,10 +220,9 @@ header {
   text-transform: uppercase;
   position: relative;
   background: linear-gradient(228deg, $main, #0f0d12);
-  background-size: 400% 400%;
-  /* -webkit-animation: AnimationName 15s ease infinite;
-  -moz-animation: AnimationName 15s ease infinite;
-  animation: AnimationName 15s ease infinite; */
+  background-size: 120% 120%;
+  animation: Gradient 10s ease infinite;
+  background-position: center;
   &.less-effort, &.mpc, &.monsters-ink, &.co-site, &.horse-repairs, &.emails {
     animation: none;
     background-size: cover;
@@ -235,72 +242,26 @@ header {
   &.greater-good {
     background-image: url("/assets/5-Greater-good/background.jpg");
     background-size: 100%;
+    background-position: cover;
   }
   &.emails {
-    background-image: url("/assets/7-responsive-e-mails-banners/background.jpg");
+    background-image: url("/assets/6-responsive-e-mails-banners/background.jpg");
   }
 }
-
-@-webkit-keyframes AnimationName {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-
-@-moz-keyframes AnimationName {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-
-@keyframes AnimationName {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
 
 @keyframes Gradient {
-  0% {
+	0% {
     background-size: 120% 120%;
     background-position: left top;
-  }
-
-  50% {
+	}
+	50% {
     background-size: 200% 180%;
     background-position: right bottom;
-  }
-
-  100% {
+	}
+	100% {
     background-size: 120% 120%;
     background-position: left top;
-  }
+	}
 }
 
 
@@ -324,7 +285,6 @@ svg {
   bottom: 0;
   width: 100%;
   height: 180px;
-  /* set height to pixels if you want angle to change with screen width */
 }
 
 /* ABOUT */
@@ -698,6 +658,22 @@ svg {
 
 
 /* SINGLE PROJECT */
+@media only screen and (max-width: 768px) {
+
+  main{
+    .project{
+      &.less-effort, &.mpc, &.co-site, &.emails{
+        > img{
+          &:nth-of-type(1), &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4), &:nth-of-type(5){
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+
 
 .project {
   text-align: left;
@@ -721,6 +697,9 @@ svg {
   &.emails img:nth-of-type(4) {
     width: 50%;
   }
+  &.emails img:nth-of-type(5) {
+    width: 50%;
+  }
   img {
     box-shadow: 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
     max-width: 840px;
@@ -736,8 +715,6 @@ svg {
     margin-bottom: 4rem;
   }
 }
-
-
 
 .projectLink{    
   text-align: center;
@@ -762,9 +739,6 @@ a[href="///"] {
   display: none;
 }
 
-
-
-
 .homeLink {
   text-align: center;
   width: 100%;
@@ -772,6 +746,7 @@ a[href="///"] {
   font-size: 1rem;
   margin-top: 4rem;
 }
+
 
 /* FOOTER */
 
@@ -811,10 +786,18 @@ svg#footer {
   z-index: -1;
 }
 
-/* Large Devices, Wide Screens */
-/* Medium Devices, Desktops */
-/* Small Devices, Tablets */
+/* SCREENS */
+
 @media only screen and (max-width: 768px) {
+
+  
+  #heroHolder {
+    width: 100%;
+    h1 {
+      width: 100%;
+    }
+  }
+  
   .homeProject {
     display: inline-block;
     width: 100%;
@@ -827,8 +810,9 @@ svg#footer {
   .feature {
     width: 100%;
     display: inline-block;
-    margin: 1rem 1.5%;
     text-align: center;
+    max-width: 100%;
+    margin: 1rem 0;
   }
   #features {
     margin-top: 4rem;
@@ -843,6 +827,14 @@ svg#footer {
     }
     img {
       width: 100%;
+    }
+  }
+
+  .hero {
+    background-position: center;
+    &.greater-good {
+      background-size: cover;
+      background-position: center;
     }
   }
   #allProjects {
@@ -866,6 +858,7 @@ svg#footer {
       }
     }
   }
+
 }
 
 /* Extra Small Devices, Phones */
@@ -884,5 +877,3 @@ svg#footer {
     display: block;
   }
 }
-
-/* Custom, iPhone Retina */
